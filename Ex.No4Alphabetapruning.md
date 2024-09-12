@@ -3,6 +3,7 @@
 ### REGISTER NUMBER : 212222060279
 ### AIM: 
 Write a Alpha beta pruning algorithm to find the optimal value of MAX Player from the given graph.
+
 ### Steps:
 1. Start the program
 2. Initially  assign MAX and MIN value as 1000 and -1000.
