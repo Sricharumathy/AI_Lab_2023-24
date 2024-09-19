@@ -1,6 +1,6 @@
 # Ex.No: 10  Logic Programming –  Simple queries from facts and rules
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:19/09/2024                                                                         
+### REGISTER NUMBER :212222060279 
 ### AIM: 
 To write a prolog program to find the answer of query. 
 ###  Algorithm:
@@ -11,7 +11,7 @@ To write a prolog program to find the answer of query.
  Step 5:  Pass the query to program. <br> 
  Step 6: Prolog interpreter shows the output and return answer. <br> 
  Step 8:  Stop the program.
-### Program:
+
 ### Task 1:
 Construct the FOL representation for the following sentences <br> 
 1.	John likes all kinds of food.  <br> 
@@ -21,9 +21,15 @@ Construct the FOL representation for the following sentences <br>
 5.	 Bill eats peanuts  <br> 
    Convert into clause form and Prove that John like Apple by using Prolog. <br> 
 ### Program:
-
-
+```
+likes(john, X) :- food(X).
+food(apple).
+food(chicken).
+eats(sue, Y) :- eats(bill, Y).
+eats(bill, peanuts).
+```
 ### Output:
+![Screenshot 2024-09-19 092513](https://github.com/user-attachments/assets/8f129ec3-8984-423e-ba07-e3909d10a722)
 
 ### Task 2:
 Consider the following facts and represent them in predicate form: <br>              
@@ -34,18 +40,28 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
-
-
+```
+have_fun_course(bk301).
+likes(steve, X) :- easy(X).
+easy(X) :- have_fun_course(X)
+```
 ### Output:
+![Screenshot 2024-09-19 092734](https://github.com/user-attachments/assets/4694195c-21bd-4f6f-9f6e-d9d34904e0d5)
 
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
 ### Program:
-
-
+```
+hostile(nano).
+american(west).
+missile(missile1).
+sells(west, missile1, nano).
+criminal(X) :- american(X), sells(X, Y, Z), missile(Y), hostile(Z)
+```
 ### Output:
+![Screenshot 2024-09-19 092959](https://github.com/user-attachments/assets/d810ee73-fa40-4860-aea0-68871bbd9bf5)
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
