@@ -1,5 +1,5 @@
 # Ex.No: 1  Implementation of Breadth First Search 
-### DATE:  12/8/24                                                                       
+### DATE: 08.08.2024                                                                       
 ### REGISTER NUMBER : 212222060279
 ### AIM: 
 To write a python program to implement Breadth first Search. 
@@ -42,14 +42,6 @@ def bfs(visited,graph,node):
 print("Following is the Breadth First Search")
 bfs(visited, graph,'5') #function calling
 ```
-
-
-
-
-
-
-
-
 
 ### Output:
 
