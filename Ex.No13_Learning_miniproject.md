@@ -1,5 +1,5 @@
 # Ex.No: 13 Learning – Use Supervised Learning  
-### DATE:                                                                            
+### DATE: 24.10.2024                                                                           
 ### REGISTER NUMBER : 212222060279
 ### AIM: 
 To write a program to train the classifier for Heart Disease Prediction.
@@ -72,6 +72,11 @@ report = classification_report(y_test, logistic_y_pred, target_names=['Absence',
 print(report)
 ```
 ### Output:
+<img width="731" alt="image" src="https://github.com/user-attachments/assets/0ea1dd72-e7e9-48f9-96ed-db53f56cd86f"><br>
+<img width="659" alt="image" src="https://github.com/user-attachments/assets/6d018635-c80d-4e70-a40c-3d1f7b3a4de6"><br>
+<img width="466" alt="image" src="https://github.com/user-attachments/assets/cbf1fd5c-84c4-4547-b6b2-532f623eef2d">
+
+
 
 
 
