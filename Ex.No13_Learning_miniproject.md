@@ -76,5 +76,6 @@ print(report)
 
 
 
+
 ### Result:
 Thus the system was trained successfully and the prediction was carried out.
